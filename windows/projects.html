@@ -46,6 +46,22 @@
             font-size: 30px;
         }
 
+        .Description {
+            margin-top: 0px;
+            max-width: 1000px;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #0084ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
     </style>
 
 </head>
@@ -63,9 +79,28 @@
 
         <h1 class="Title">Project Page</h1>
 
+        <p class="Description">
+        Code for all projects is available on my GitHub page, which can be accessed by clicking the link below:
+        
+        <br><br>
+        <a href="https://github.com/darcysprigg" target="_blank">GitHub Page</a>
+
+        </p>
+
         <h2 class="subheader2">Topology-Enhanced Video Classification</h2>
 
+
+
         <h2 class="subheader2">Stock Fundamentals Reporting Tool</h2>
+
+        <p class="Description">
+        
+        Built a Python-based tool that uses yfinance to automatically collect market data, financial statements, and valuation metrics over a five-year period. The tool generates structured PDF reports that provide a comprehensive overview of a company’s financial health.
+        <br><br>
+        Users can enter a stock ticker to instantly generate a detailed analysis of the company. An example report using Google stock data can be viewed by clicking the button below.
+        </p>
+
+        <button class="button" id="GOOG_stock_analysis">Example Report</button>
 
         
 
