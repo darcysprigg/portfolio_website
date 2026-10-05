@@ -21,7 +21,9 @@
             justify-content: flex-start;
             align-items: center;
             text-align: center;
-            height: 100vh;
+            min-height: 100vh;
+            padding-bottom: 0px;
+            box-sizing: border-box;
         }
 
         .BackButton {
@@ -73,6 +75,11 @@
             color: #0084ff;
         }
 
+        .BottomDescription {
+            font-size: 12px;
+            margin-top: 100px;
+        }
+
     </style>
 
 </head>
@@ -86,10 +93,10 @@
             <
         </button>
 
-        <h1 class="Title">Project Page</h1>
+        <h1 class="Title">Projects</h1>
 
         <p class="Description">
-        Code for all projects is available on my GitHub page, which can be accessed by clicking the link below:
+        Code for all projects is available on my GitHub page found below:
         
         <br><br>
         <a href="https://github.com/darcysprigg" target="_blank" class="link">GitHub Page</a>
@@ -100,8 +107,16 @@
 
         <p class="Description">
 
-        ***CONTENT COMING SOON***
+        Conducted research investigating the use of topological data analysis to enhance video classification with 3D convolutional neural networks (3D-CNNs). 
+        <br><br>
+        Developed a pipeline for extracting topological features from video frames using persistent homology and persistence images, then incorporated these features into multiple model architectures through concatenation-based fusion and multi-branch architectures. Additionally, implemented Convolutional Block Attention Modules (CBAM) to investigate the use of attention mechanisms for processing topological features. 
         
+        Models were trained and evaluated on the UCF101 human action recognition dataset using standard classification metrics.
+        <br><br>
+        Project code:
+        <br><br>
+        <a href="https://github.com/darcysprigg/Topology-enhanced-Video-Classification-Project" target="_blank" class="link">Topology-enhanced-Video-Classification-Project
+        </a>
         </p>
 
         <h2 class="subheader2">Stock Fundamentals Reporting Tool</h2>
@@ -114,9 +129,18 @@
         </p>
 
         <button class="button" id="GOOG_stock_analysis">Example Report</button>
-
         
+        <p class="Description">
+        <br><br>
+        Project code:
+        <br><br>
+        <a href="https://github.com/darcysprigg/Stock_Overview" target="_blank" class="link">Stock_Overview
+        </a>
+        </p>
 
+        <p class="BottomDescription">
+            Created by Darcy Sprigg
+        </p>
     </div>
 
 </body>
