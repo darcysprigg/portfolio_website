@@ -79,7 +79,7 @@
             object-position: left center;
         }
 
-        .Email, .LinkedIn {
+        .notop {
             margin-top: 0px;
         }
 
@@ -95,6 +95,16 @@
 
         .link:hover {
         color: #66b3ff;
+        }
+
+        .link::after {
+        content: " ↗";
+        transition: transform 0.2s;
+        }
+
+        .link:hover::after {
+        display: inline-block;
+        transform: translate(2px, -2px);
         }
 
         ::-webkit-scrollbar {
@@ -157,16 +167,18 @@
         Email:
         </h2>
 
-        <p class="Email">
-            <a href="mailto:darcysprigg@outlook.com" class="link">darcysprigg@outlook.com</a>
+        <p class="notop">
+            <a href="mailto:darcysprigg@outlook.com" class="link">darcysprigg@outlook.com
+            </a>
         </p>
 
         <h2>
         LinkedIn:
         </h2>
 
-        <p class="LinkedIn">
-            <a href="https://www.linkedin.com/in/darcy-sprigg-a9a16a39a/" target="_blank" class="link">My LinkedIn Profile</a>
+        <p class="notop">
+            <a href="https://www.linkedin.com/in/darcy-sprigg-a9a16a39a/" target="_blank" class="link">My LinkedIn Profile
+            </a>
         </p>
 
         <p class="BottomDescription">

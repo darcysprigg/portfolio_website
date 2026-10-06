@@ -69,6 +69,20 @@
         color: #66b3ff;
         }
 
+        .link::after {
+        content: " ↓";
+        transition: transform 0.2s;
+        }
+
+        .link:hover::after {
+        display: inline-block;
+        transform: translate(0px, 2px);
+        }
+
+        .notop {
+            margin-top: 0px;
+        }
+
         ::-webkit-scrollbar {
             width: 10px;
         }
@@ -102,10 +116,12 @@
         <img src="../images/Resumepng.png" alt="Resume" width="800">
 
         <h2 class="subheader2">PDF Download</h2>
-
-        <a href="../pdfs/Resume.pdf" download="Resume.pdf" class="link">
-        Resume
-        </a>
+        
+        <p class="notop">
+            <a href="../pdfs/Resume.pdf" download="Resume.pdf" class="link">
+            Resume
+            </a>
+        </p>
 
         <p class="BottomDescription">
             Created by Darcy Sprigg
