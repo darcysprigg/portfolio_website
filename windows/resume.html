@@ -34,6 +34,10 @@
             min-height: 100vh;
         }
 
+        .Title {
+            font-size: 48px;
+        }
+
         .BackButton {
             position: fixed;
             top: 20px;
@@ -100,6 +104,23 @@
             background: #454A55;
         }
 
+        .divider {
+        width: 100%;
+        max-width: 1500px;
+        border: none;
+        border-top: 1px solid #63666e;
+        margin-top:20px;
+        margin-bottom: 70px;
+        }
+
+        .sub-divider {
+        width: 100%;
+        max-width: 1000px;
+        border: none;
+        border-top: 1px solid #63666e;
+        margin-top:70px;
+        }
+
     </style>
 
 </head>
@@ -113,12 +134,18 @@
             ←
         </button>
 
+        <h1 class="Title">Professional Resume</h1>
+
+        <hr class="divider">
+
         <img src="../images/Resumepng.png" alt="Resume" width="800">
+
+        <hr class="sub-divider">
 
         <h2 class="subheader2">PDF Download</h2>
         
         <p class="notop">
-            <a href="../pdfs/Resume.pdf" download="Resume.pdf" class="link">
+            <a href="../pdfs/Resume.pdf" download="Resume-DarcySprigg.pdf" class="link">
             Resume
             </a>
         </p>
